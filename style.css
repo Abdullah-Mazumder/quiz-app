@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anek Tamil", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.admin-dashboard button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 0 47px 0 46px;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transition: 0.4s;
+}
+
+.admin-dashboard button:hover {
+  background-color: #155724;
+}
+
+.admin-dashboard a button {
+  text-decoration: none;
+  color: white;
+}
+
+.muQuizApp {
+  width: 320px;
+  height: 610px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 48px;
+}
+
+.muQuizApp .img img {
+  width: 100%;
+}
+
+.textOne {
+  width: 90%;
+  margin: auto;
+}
+
+.textOne h3 {
+  margin-top: 20px;
+}
+
+.myBtn button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 57px 0px 48px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  transition: 0.4s;
+}
+
+.myBtn button:hover {
+  background-color: rgb(75, 72, 164);
+}
+
+.rulesBox {
+  width: 320px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 48px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.rulesBox.activeInfo {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+}
+
+.rulesTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
+}
+
+.rulesList {
+  width: 80%;
+  margin: auto;
+}
+
+ol {
+  padding: 10px;
+}
+
+ol li {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.buttons button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.buttons button:first-child {
+  border-radius: 0 47px 0 46px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.buttons button:last-child {
+  border-radius: 57px 0px 48px 0;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.buttons button:last-child:hover {
+  background-color: rgb(75, 72, 164);
+}
+
+.buttons button:first-child:hover {
+  background-color: red;
+}
+
+.questions {
+  width: 320px;
+  min-height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 48px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.questions.activeInfo {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+}
+
+.questions .questionsHeader {
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  padding: 0 30px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions .questionsHeader .title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.questions .questionsHeader .timecount {
+  color: #004085;
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  margin-left: 3.5rem !important;
+}
+
+.questions .questionsHeader .timecount .seconds {
+  font-size: 18px;
+  font-weight: 500;
+  height: 26px;
+  width: 45px;
+  color: white;
+  border-radius: 5px;
+  line-height: 26px;
+  text-align: center;
+  background: #343a40;
+  user-select: none;
+}
+
+.questions .questionsHeader .timecount .timeLines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.section {
+  padding: 25px 30px 20px 30px;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.myOptions .options {
+  display: block;
+  background-color: aliceblue;
+  border: 1px solid #84c5fe;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.myOptions .options:hover {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+}
+
+.questions footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgrey;
+}
+
+.totalQue {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+footer button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 57px 0px 48px 0;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  display: none;
+}
+
+footer button:hover {
+  background-color: rgb(75, 72, 164);
+}
+
+.options.correct {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.options.incorrect {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.options.disabled {
+  pointer-events: none;
+}
+
+.timeLines {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.resultBox {
+  padding: 40px;
+  width: 320px;
+  min-height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 48px;
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.resultBox img {
+  width: 100%;
+  height: 170px;
+}
+
+.completeText {
+  font-size: 23px;
+  font-weight: 800;
+  margin: 15px 0;
+  margin-bottom: 30px;
+}
+
+.scoreText span {
+  font-size: 18px;
+  font-weight: 600 !important;
+  display: inline-block;
+}
+
+.scoreText span p {
+  font-weight: 700;
+}
+
+.resultButtons button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.resultButtons .quit {
+  border-radius: 0 47px 0 46px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.resultButtons .restart1 {
+  border-radius: 57px 0px 48px 0;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.resultButtons button:last-child:hover {
+  background-color: red !important;
+}
+
+.resultButtons button:first-child:hover {
+  background-color: rgb(75, 72, 164) !important;
+}
+
+.resultBox.activeResult {
+  z-index: 5 !important;
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+  pointer-events: auto !important;
+}

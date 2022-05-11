@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div class="msg-container">
+      <div class="content-container">
+        <div class="cross-btn">
+          <span>&#10060</span>
+        </div>
+        <div class="content"></div>
+        <div class="ok-btn">
+          <button>OK</button>
+        </div>
+      </div>
+    </div>
+    <div class="delete-msg-container">
+      <div class="delete-content-container">
+        <div class="delete-cross-btn">
+          <span>&#10060</span>
+        </div>
+        <div class="delete-content"></div>
+        <div class="delete-ok-btn">
+          <button>OK</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="post-container">
+        <div class="section">
+          <h2>Post Questiion</h2>
+          <div class="option-box">
+            <h3>Please give 4 options</h3>
+            <form>
+              <label for="question">Question Name</label>
+              <input type="text" name="question" id="question" required /><br />
+              <label for="option1">Option 1</label><br />
+              <input type="text" name="option1" id="option1" required /><br />
+              <label for="option2">Option 2</label><br />
+              <input type="text" name="option2" id="option2" required /><br />
+              <label for="option3">Option 3</label><br />
+              <input type="text" name="option3" id="option3" required /><br />
+              <label for="option4">Option 4</label><br />
+              <input type="text" name="option4" id="option4" required /><br />
+              <label for="answer">Answer</label><br />
+              <input type="text" name="answer" id="answer" required />
+              <p>Note that: Answer must be available in options</p>
+              <div class="post-btn">
+                <button type="submit" id="post">Post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="edit-delete-container">
+        <h2>Search, Edit, Delete Question</h2>
+        <div class="edit-delete-section">
+          <h3>Search Question</h3>
+          <div class="search-box">
+            <input type="search" id="search" />
+            <button>Search</button>
+          </div>
+          <div class="edit-question-box">
+            <form>
+              <label for="edit-question">Question Name</label><br />
+              <input
+                type="text"
+                name="question"
+                id="edit-question"
+                required
+              /><br />
+              <label for="edit-option1">Option 1</label><br />
+              <input
+                type="text"
+                name="option1"
+                id="edit-option1"
+                required
+              /><br />
+              <label for="edit-option2">Option 2</label><br />
+              <input
+                type="text"
+                name="option2"
+                id="edit-option2"
+                required
+              /><br />
+              <label for="edit-option3">Option 3</label><br />
+              <input
+                type="text"
+                name="option3"
+                id="edit-option3"
+                required
+              /><br />
+              <label for="edit-option4">Option 4</label><br />
+              <input
+                type="text"
+                name="option4"
+                id="edit-option4"
+                required
+              /><br />
+              <label for="edit-answer">Answer</label><br />
+              <input type="text" name="answer" id="edit-answer" required />
+              <div class="buttons">
+                <button type="submit">Delete</button>
+                <button type="submit">Submit Edit Post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./QUESTIONS.js"></script>
+    <script src="./admin.js"></script>
+  </body>
+</html>
